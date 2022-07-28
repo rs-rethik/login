@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Login page</title>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                background-image: url(back.jpg);
+                background-size: cover;
+            }
+            .container{
+                top:50%;
+                left:50%;
+                position:absolute;
+                transform:translate(-50%,-50%);
+            }
+            .card{
+                padding:60px 40px 50px 40px;
+                background:rgb(50,50,50) ;
+                border-radius: 10px;
+            }
+            #name{
+                width: 200px;
+                border:none;
+                background:transparent;
+                border-bottom: 1px solid white;
+                padding:6px;
+                margin-bottom: 20px;
+                color:white;
+                outline: none;
+            }
+            #button{
+                padding:10px 20px;
+                border-radius:20px;
+                border: none;
+                outline: none;
+                background:dodgerblue;
+                color:white;
+                margin-top: 20px;
+                margin-left: 60px;
+            }
+            #button:hover{
+                background-color: rgb(63, 63, 239);
+                color:black;
+                cursor: pointer;
+            }
+            a{
+                font-size: 13px;
+                color:aqua;
+            }
+            img{
+                border-radius: 50%;
+                position: absolute;
+                margin-left: 100px;
+                margin-top: -40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="user.jpg" height="70" width="70">
+            <div class="card">
+                <input type="text" placeholder="Username" id="name"><br>
+                <input type="password" placeholder="Password" id="name"><br>
+                <a href="./register.html">New User?</a><br>
+                <input type="submit" value="Login" id="button">
+            </div>
+        </div>
+    </body>
+</html>
