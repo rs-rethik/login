@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                background-image:url(back.jpg) ;
+                background-size: cover;
+            }
+            .container{
+                top:50%;
+                left:50%;
+                position:absolute;
+                transform:translate(-50%,-50%);
+                color:white;
+            }
+            .card{
+                color:white;
+                padding:60px 40px 50px 40px;
+                background:rgb(50,50,50) ;
+                border-radius: 20px;
+            }
+            #button{
+                padding:10px 20px;
+                border-radius:20px;
+                border: none;
+                outline: none;
+                background:dodgerblue;
+                color:white;
+                margin-top: 20px;
+                margin-left: 160px;
+            }
+            #button:hover{
+                background-color: rgb(63, 63, 239);
+                color:black;
+                cursor: pointer;
+            }
+            #name{
+                width: 400px;
+                border:none;
+                background:transparent;
+                border-bottom: 1px solid white;
+                padding:6px;
+                margin-bottom: 20px;
+                color:white;
+                outline: none;
+            }
+            a{
+                font-size: 13px;
+                color:aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <form>
+                    <h2>Registeration</h2>
+                    <input type="text" placeholder="Username" id="name"><br>
+                    <input type="text" placeholder="Father's name" id="name"><br>
+                    <input type="date" placeholder="DOB" id="name"><br>
+                    <input type="Text" placeholder="Gender" id="name"><br>
+                    <input type="email" placeholder="Email" id="name"><br>
+                    <input type="Department" placeholder="DOB" id="name"><br>
+                    <a href="./login.html">Already registered?</a><br>
+                    <button type="submit" formaction="./index.html" id="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
