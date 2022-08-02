@@ -55,16 +55,16 @@
     <body>
         <div class="container">
             <div class="card">
-                <form>
-                    <h2>Registeration</h2>
-                    <input type="text" placeholder="Username" id="name"><br>
-                    <input type="text" placeholder="Father's name" id="name"><br>
-                    <input type="date" placeholder="DOB" id="name"><br>
-                    <input type="Text" placeholder="Gender" id="name"><br>
-                    <input type="email" placeholder="Email" id="name"><br>
-                    <input type="Department" placeholder="DOB" id="name"><br>
+                <h2>Registeration</h2>
+                <form name="info1" action="connection.php" method="POST">
+                    <input type="text" name="user" placeholder="Username" id="name" required=""><br>
+                    <input type="text" name="fname" placeholder="Father's name" id="name" required=""><br>
+                    <input type="date" name="dob" placeholder="DOB" id="name" required=""><br>
+                    <input type="text" name="gender" placeholder="Gender" id="name" required=""><br>
+                    <input type="email" name="mail" placeholder="Email" id="name" required=""><br>
+                    <input type="text" name="dep" placeholder="Department" id="name" required=""><br>
                     <a href="./login.html">Already registered?</a><br>
-                    <button type="submit" formaction="./index.html" id="button">Submit</button>
+                    <input type="submit" value="Register" id="button">
                 </form>
             </div>
         </div>
